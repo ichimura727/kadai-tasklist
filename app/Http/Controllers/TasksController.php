@@ -46,7 +46,7 @@ class TasksController extends Controller
     {
         $this->validate($request, [
             'title' => 'required|max:191',   
-            'content' => 'required|max:191',
+            'status' => 'required|max:10',
         ]);
         
         
@@ -99,7 +99,7 @@ class TasksController extends Controller
     {
         $this->validate($request, [
             'title' => 'required|max:191',   // 追加
-            'content' => 'required|max:191',
+            'status' => 'required|max:10',
         ]);
         
         
