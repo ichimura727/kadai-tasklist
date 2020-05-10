@@ -104,7 +104,7 @@ class TasksController extends Controller
         $task = Task::find($id);
 
         if($task->user_id  == \Auth::id()){
-            return view('tasks.show', [
+            return view('tasks.edit', [
                 'task' => $task,
             ]);
         }
